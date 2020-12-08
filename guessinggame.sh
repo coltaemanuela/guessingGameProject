@@ -8,7 +8,7 @@ function startGuessing() {
   read userResponse
   let response=$userResponse
   echo "Your guess was: $response"
-  if [[ $response -eq 3 ]]
+  if [[ $response -eq $filesNumber ]]
   then
   echo "Congratulations! Your guess was correct!"
   fi
